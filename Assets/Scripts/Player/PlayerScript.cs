@@ -79,6 +79,13 @@ public class PlayerScript : MonoBehaviour {
 		myBody.AddForce (new Vector2 (forceX, forceY));
 	}
 
+	public void BouncePlayer(float force) {
+		if (grounded) {
+			grounded = false;
+			myBody.AddForce (new Vector2 (0, force));
+		}
+	}
+
 	void OnCollisionEnter2D (Collision2D target) {
 		if (target.gameObject.tag == "Ground") {
 			grounded = true;
