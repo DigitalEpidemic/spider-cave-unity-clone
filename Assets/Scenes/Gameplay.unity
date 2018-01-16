@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 169765556}
   - component: {fileID: 169765555}
   - component: {fileID: 169765554}
+  - component: {fileID: 169765558}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -533,6 +534,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &169765558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169765553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ce03d2809127e4ebd52f9609bf3cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0
+  maxX: 160
 --- !u!1001 &189683517
 Prefab:
   m_ObjectHideFlags: 0
@@ -3906,7 +3920,7 @@ Transform:
   - {fileID: 267972863}
   - {fileID: 1766109158}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430709225
 GameObject:
@@ -4361,7 +4375,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4386345085597036, guid: adcf3ebf193c47046ac4d20bb8ef9bbc, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114424458354486338, guid: adcf3ebf193c47046ac4d20bb8ef9bbc,
+        type: 2}
+      propertyPath: jumpForce
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 114424458354486338, guid: adcf3ebf193c47046ac4d20bb8ef9bbc,
+        type: 2}
+      propertyPath: maxVelocity
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adcf3ebf193c47046ac4d20bb8ef9bbc, type: 2}
@@ -6350,7 +6374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4336349993979486, guid: 86d8e76fb0e4e8745a31cb38047f81f2, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 212633491060141050, guid: 86d8e76fb0e4e8745a31cb38047f81f2,
         type: 2}
