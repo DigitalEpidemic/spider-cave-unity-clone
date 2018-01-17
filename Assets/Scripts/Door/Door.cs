@@ -40,8 +40,8 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D target) {
 		if (target.tag == "Player") {
+			GameObject.Find("Gameplay Controller").GetComponent<GameplayController> ().PlayerDied ();
 		}
-		Debug.Log ("Game Finished");
 	}
 
 } // Door
