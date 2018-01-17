@@ -47,6 +47,7 @@ public class SpiderWalker : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D target) {
 		if (target.gameObject.tag == "Player") {
 			Destroy (target.gameObject);
+			GameObject.Find("Gameplay Controller").GetComponent<GameplayController> ().PlayerDied ();
 		}
 	}
 
